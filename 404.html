@@ -50,16 +50,14 @@
     </head>
     <body class="chocolatey-docs">
         <header>
-            <div id="globalNav">
-                <div class="container-fluid">
-                    <ul class="nav global-nav">
-    <li class="nav-item"><a class="nav-link" href="https://chocolatey.org" target="_blank" rel="noreferrer"><span class="d-sm-none">Back to </span>chocolatey.org</a></li>
+            <div class="d-none d-sm-flex">
+                <ul class="nav global-nav fw-bold flex-wrap flex-sm-fill justify-content-sm-end">
+    <li class="nav-item"><a class="nav-link" href="https://chocolatey.org" target="_blank" rel="noreferrer">chocolatey.org</a></li>
     <li class="nav-item"><a class="nav-link" href="https://chocolatey.org/community" target="_blank" rel="noreferrer">Community</a></li>
     <li class="nav-item"><a class="nav-link" href="https://docs.chocolatey.org/en-us/" target="_blank" rel="noreferrer">Docs</a></li>
     <li class="nav-item"><a class="nav-link" href="https://blog.chocolatey.org" target="_blank" rel="noreferrer">Blog</a></li>
     <li class="nav-item"><a class="nav-link" href="https://chocolatey.org/install" target="_blank" rel="noreferrer">Install</a></li>
 </ul>
-                </div>
             </div>
             <nav id="topNav" class="navbar navbar-expand">
                 <a class="navbar-brand" href="/">
@@ -67,10 +65,10 @@
                     <img class="d-none d-md-block" src="/assets/images/global-shared/logo-square.svg" alt="Chocolatey" />
                 </a>
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
+                    <li class="nav-item me-2 me-md-3">
                         <a class="nav-link" href="https://github.com/chocolatey/docs" aria-label="Edit on GitHub"><i class="fab fa-2x fa-github" aria-hidden="true"></i></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item me-2 me-md-3">
                         <label class="mb-0" for="themeToggle">
                         <input id="themeToggle" class="toggle-checkbox" type="checkbox" aria-label="Toggle theme settings" />
                             <div class="toggle-slot">
@@ -84,22 +82,24 @@
                             </div>
                         </label>
                     </li>
-                    <li class="nav-item d-md-none">
-                        <button type="button" aria-label="Search documentation" class="btn btn-search">
+                    <li class="nav-item d-md-none me-2">
+                        <button type="button" aria-label="Search documentation" class="btn btn-search btn-top-nav">
                             <i class="fas fa-search" aria-hidden="true"></i>
                         </button>
                     </li>
                 </ul>
-                <form id="searchBox" class="form-inline d-none d-md-flex" role="search">
-                    <i class="fas fa-search" aria-hidden="true"></i>
-                    <input type="search" class="form-control" id="searchQuery" placeholder="Search..." aria-label="Search" />
-                    <span class="d-none d-md-flex search-key-container">
-                        <span class="badge badge-key bg-primary search-key"></span>
-                        <span class="badge badge-key bg-primary">k</span>
-                    </span>
+                <form class="ms-3 ms-md-0 search-box search-d-none-submit" role="search">
+                    <div class="flex-grow-1">
+                        <input type="search" class="form-control search-input" id="searchQuery" placeholder="Search..." aria-label="Search" />
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                        <span class="d-none d-md-flex search-key-container">
+                            <span class="badge badge-key bg-primary search-key"></span>
+                            <span class="badge badge-key bg-primary">k</span>
+                        </span>
+                    </div>
+                    <button type="button" aria-label="Close search" class="btn btn-search-close btn-outline-primary ms-2 me-3 me-md-0 d-md-none"><i class="fas fa-times" aria-hidden="true"></i></button>
                 </form>
-                <button type="button" aria-label="Close search" class="btn btn-search-close btn-link d-none">Close</button>
-                <button type="button" class="navbar-toggler btn d-md-none" data-bs-toggle="collapse" data-bs-target="#leftSidebar" aria-expanded="false" aria-controls="leftSidebar" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+                <button type="button" class="navbar-toggler btn btn-top-nav d-md-none me-3" data-bs-toggle="collapse" data-bs-target="#leftSidebar" aria-expanded="false" aria-controls="leftSidebar" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
             </nav>
         </header>
 <main id="centered-layout" class="position-relative d-sm-flex">
@@ -123,7 +123,7 @@
         <footer class="p-3 text-center">
             <span class="small">
                 <span>© 2021 Chocolatey Software, Inc.</span><br />
-                <span>Deployed from <a href="https://github.com/chocolatey/docs/commit/23e767e315168d9e8d7b2e592cee62cc34a2648f">23e767e3</a></span><br />
+                <span>Deployed from <a href="https://github.com/chocolatey/docs/commit/6b12c526c9f00f2d8aeb79161a6e7cc25c3e3866">6b12c526</a></span><br />
                 <span><a href="https://statiq.dev/">Generated by Statiq</a></span>
             </span>
             <div id="cookieNoticeAlert" class="alert alert-primary alert-dismissible alert-dismissible-center alert-btn-center fade show d-none" role="alert">
