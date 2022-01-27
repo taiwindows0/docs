@@ -34,10 +34,7 @@
         <link rel="stylesheet" href="/assets/css/docsearch.min.css" />
         <link rel="stylesheet" href="/assets/css/chocolatey.bundle.min.css" />
         <script>
-            if(!/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
-                const theme = localStorage.getItem('theme'), html = document.getElementsByTagName("html")[0];
-                if(theme){if(theme == 'dark') {html.setAttribute("data-user-color-scheme", "dark");}else{html.setAttribute("data-user-color-scheme", "light");}}
-            }
+            if(!/MSIE \d|Trident.*rv:/.test(navigator.userAgent)){const e=localStorage.getItem("theme"),t=document.getElementsByTagName("html")[0];e?"dark"==e?(t.classList.add("dark-theme"),t.setAttribute("data-user-color-scheme","dark")):(t.classList.add("light-theme"),t.setAttribute("data-user-color-scheme","light")):window.matchMedia("(prefers-color-scheme: dark)").matches?t.classList.add("dark-theme"):t.classList.add("light-theme")}
         </script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2743882-12"></script>
         <script>
@@ -61,13 +58,29 @@
         </div>
 
             <div class="d-none d-sm-flex">
-                <ul class="nav global-nav fw-bold flex-wrap flex-sm-fill justify-content-sm-end">
-    <li class="nav-item"><a class="nav-link" href="https://chocolatey.org" target="_blank" rel="noreferrer">chocolatey.org</a></li>
+                <div class="global-nav w-100 pe-md-3">
+                    <ul class="nav global-nav-ul fw-bold flex-wrap flex-sm-fill justify-content-sm-end overflow-hidden">
+    <li class="nav-item"><a class="nav-link" href="https://chocolatey.org" target="_blank" rel="noreferrer">Main</a></li>
     <li class="nav-item"><a class="nav-link" href="https://chocolatey.org/community" target="_blank" rel="noreferrer">Community</a></li>
     <li class="nav-item"><a class="nav-link" href="https://docs.chocolatey.org/en-us/" target="_blank" rel="noreferrer">Docs</a></li>
     <li class="nav-item"><a class="nav-link" href="https://blog.chocolatey.org" target="_blank" rel="noreferrer">Blog</a></li>
     <li class="nav-item"><a class="nav-link" href="https://chocolatey.org/install" target="_blank" rel="noreferrer">Install</a></li>
+    <li class="nav-item align-items-md-center d-none d-md-flex">
+        <label class="mb-0 ms-3" for="themeToggle">
+            <input id="themeToggle" class="toggle-checkbox theme-toggle" type="checkbox" aria-label="Toggle theme settings" />
+<div class="toggle-slot">
+    <div class="sun-icon-wrapper">
+        <div class="sun-icon fas fa-sun"></div>
+    </div>
+    <div class="toggle-button"></div>
+    <div class="moon-icon-wrapper">
+        <div class="moon-icon fas fa-moon"></div>
+    </div>
+</div>
+        </label>
+    </li>
 </ul>
+                </div>
             </div>
             <nav id="topNav" class="navbar navbar-expand">
                 <a class="navbar-brand" href="/">
@@ -78,18 +91,18 @@
                     <li class="nav-item me-2 me-md-3">
                         <a class="nav-link" href="https://github.com/chocolatey/docs" aria-label="Edit on GitHub"><i class="fab fa-2x fa-github" aria-hidden="true"></i></a>
                     </li>
-                    <li class="nav-item me-2 me-md-3">
+                    <li class="nav-item me-2 me-md-3 d-md-none">
                         <label class="mb-0" for="themeToggle">
-                        <input id="themeToggle" class="toggle-checkbox" type="checkbox" aria-label="Toggle theme settings" />
-                            <div class="toggle-slot">
-                                <div class="sun-icon-wrapper">
-                                    <div class="sun-icon fas fa-sun"></div>
-                                </div>
-                                <div class="toggle-button"></div>
-                                <div class="moon-icon-wrapper">
-                                    <div class="moon-icon fas fa-moon"></div>
-                                </div>
-                            </div>
+                            <input id="themeToggle" class="toggle-checkbox theme-toggle" type="checkbox" aria-label="Toggle theme settings" />
+<div class="toggle-slot">
+    <div class="sun-icon-wrapper">
+        <div class="sun-icon fas fa-sun"></div>
+    </div>
+    <div class="toggle-button"></div>
+    <div class="moon-icon-wrapper">
+        <div class="moon-icon fas fa-moon"></div>
+    </div>
+</div>
                         </label>
                     </li>
                     <li class="nav-item d-md-none me-2">
@@ -133,7 +146,7 @@
         <footer class="flex-shrink-0">
             <div class="bg-theme-light border-top text-center p-3">
                 <span class="small">© 2022 Chocolatey Software, Inc.</span><br />
-                <span class="small">Deployed from <a href="https://github.com/chocolatey/docs/commit/d4a9cbdcec0da18a97bc43805d4f6b440a3d6585">d4a9cbdce</a></span><br />
+                <span class="small">Deployed from <a href="https://github.com/chocolatey/docs/commit/31fd37a7b6df8c997055de1cdc16a5e0a4003506">31fd37a7b</a></span><br />
                 <span class="small"><a href="https://statiq.dev/">Generated by Statiq</a></span>
             </div>
             <div id="cookieNoticeAlert" class="alert alert-primary alert-dismissible alert-dismissible-center alert-btn-center fade show d-none" role="alert">
