@@ -92,7 +92,7 @@ For Chocolatey clients, you will need the following:
 
 ### Chocolatey Repository Servers
 
-Unforunately it's harder to make recommendations here as it is really dependent on the repository that you choose and what requirements they have. It varies from a Windows deployment to Linux deployed repositories, from Java-based, to .NET-based, to PHP, and Rust-based repositories. The requirements vary wildly, plus you may use those repositories that address multiple types of packages and would need to figure out the space available for that.
+Unforunately it's harder to make recommendations here as it is really dependent on the repository that you choose and what requirements they have. It varies from a Windows deployment to Linux deployed repositories, from Java-based, to .NET-based, to PHP, and Rust-based repositories. The requirements vary wildly, plus you may use those repositories that address multiple types of packages and would need to figure out the space available for that.https://ehsaasweb.com/8171-check-online/
 
 **SPACE RECOMMENDATION**: Have enough space for 10x the size of the installers and other software you will store. This will allow for some default growth. We would recommend 100 GB at a minimum.
 
